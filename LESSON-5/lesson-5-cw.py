@@ -4,8 +4,8 @@ import pygame
 pygame.init()
 screen = pygame.display.set_mode([600,600])
 
-player = pygame.image.load("LESSON-5/character.png")
-background = pygame.image.load("LESSON-5/background.png")
+player = pygame.image.load("Pro Game Developer in Python\LESSON-5\character.png")
+background = pygame.image.load("Pro Game Developer in Python\LESSON-5/background.png")
 
 player_x = 200
 player_y = 200

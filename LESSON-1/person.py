@@ -19,6 +19,7 @@ class Student():
     schoolclass = "6th A"
     house = "Sapphire"
     classteacher = "Poonam Ma'am"
+    school = "abc"
 
     #constructor
     def __init__(self):

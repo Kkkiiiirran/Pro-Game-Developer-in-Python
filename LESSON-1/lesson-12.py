@@ -1,4 +1,4 @@
-from pdb import run
+
 import pygame
 pygame.init()
 

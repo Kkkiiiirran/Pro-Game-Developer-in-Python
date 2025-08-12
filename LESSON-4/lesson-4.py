@@ -3,8 +3,8 @@ import time
 
 pygame.init()
 
-WIDTH = 600
-HEIGHT = 600
+WIDTH = 1000
+HEIGHT = 1000
 
 display_surface=pygame.display.set_mode((WIDTH,HEIGHT))
 pygame.display.set_caption("Birthday Greeting Card")

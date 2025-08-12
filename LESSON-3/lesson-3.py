@@ -43,7 +43,7 @@ running = True
 
 while running:
     for event in pygame.event.get():
-        if event == pygame.QUIT:
+        if event.type == pygame.QUIT:
             running = False
         if (event.type == pygame.MOUSEBUTTONDOWN):
             blueCircle.draw()

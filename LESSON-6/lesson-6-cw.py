@@ -29,14 +29,13 @@ class Game:
 
         self.border = pygame.Rect(self.WIDTH // 2 - 5, 0, 10, self.HEIGHT)
 
-        self.yellow_spaceship = self.load_spaceship(
-            os.path.join('LESSON-6\Assets', 'spaceship_yellow.png'), 90
+        self.yellow_spaceship = self.load_spaceship("Pro Game Developer in Python\LESSON-6\Assets\spaceship_red.png", 90
         )
         self.red_spaceship = self.load_spaceship(
-            os.path.join('LESSON-6\Assets', 'spaceship_red.png'), 270
+            "Pro Game Developer in Python\LESSON-6\Assets\spaceship_red.png", 270
         )
         self.space_bg = pygame.transform.scale(
-            pygame.image.load(os.path.join('LESSON-6\Assets', 'space.png')),
+            pygame.image.load("Pro Game Developer in Python\LESSON-6\Assets\space.png"),
             (self.WIDTH, self.HEIGHT),
         )
 

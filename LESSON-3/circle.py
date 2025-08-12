@@ -13,7 +13,7 @@ screen.fill(white)
 
 class Circle():
     def __init__(self, color, pos, rad, wid=0):
-        self.color = color
+
         self.color = color
         self.pos = pos
         self.rad = rad
@@ -41,11 +41,12 @@ while running:
             running=False
             break
     
-        
         elif (event.type == pygame.MOUSEMOTION):
             pos = pygame.mouse.get_pos()
+            greenCircle = Circle(green, position,20)
             blackCircle = Circle(black, pos, 2)
             blackCircle.draw()
+            greenCircle.draw()
             pygame.display.update()
 
 
