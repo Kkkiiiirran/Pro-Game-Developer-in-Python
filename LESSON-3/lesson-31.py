@@ -18,21 +18,25 @@ class Circle():
         self.Draw_Circle = pygame.draw.circle(self.circle_surface, self.circle_color, self.circle_pos, self.circle_radius, self.circle_width)
 
     def grow(self,r):
-        self.circle_radius = self.circle_radius+r
-        self.Draw_Circle = pygame.draw.circle(self.circle_surface, self.circle_color, self.circle_pos, self.circle_radius, self.circle_width)
+        self.circle_radius+=20 
+        # self.Draw_Circle = pygame.draw.circle(self.circle_surface, self.circle_color, self.circle_pos, self.circle_radius, self.circle_width)
 
 circle=Circle(blue,(300,300),25,0)
 running = True
 
 while running:
+    circle.draw()
+            
     for event in pygame.event.get():
         if event == pygame.QUIT:
             running = False
         elif event.type == pygame.MOUSEBUTTONDOWN:
-            screen.fill((255,255,255))
-            circle.draw()
-            pygame.display.update()
-        elif event.type == pygame.MOUSEBUTTONUP:
-            screen.fill((255,255,255))
+            # screen.fill((255,255,255))
             circle.grow(20)
-            pygame.display.update()
+            # circle.draw()
+            
+        # elif event.type == pygame.MOUSEBUTTONUP:
+        #     # screen.fill((255,255,255))
+        #     # circle.grow(20)
+        #     pygame.display.update()
+        pygame.display.update()
